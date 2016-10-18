@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content=""> -->
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=3MFO_c_dc6wP3WL_mSNn"></script>
+	<title>연습</title>
+</head>
+<body>
+	<h1>API 활용 연습</h1>
+	<section>
+		<div>
+			<ul>
+				<li>네이버 지도 API : <a target="f">map</a></li>
+			</ul>
+		</div>
+	</section>
+	<section>
+		<div id="map" style="width: 100%; height: 400px;"></div>
+		<!-- <div>
+			<iframe name="f" frameborder="0" style="width:100%;height:100%;border:1px solid black;"></iframe>	
+		</div> -->
+	</section>
+	
+<script>
+	var mapOptions = {
+	    center: new naver.maps.LatLng(37.3595704, 127.105399),
+	    zoom: 10
+	};
+	var map = new naver.maps.Map('map', mapOptions);
+</script>
+</body>
+</html>
