@@ -77,8 +77,12 @@
         <div class="container">
             <div class="intro-text">
                 <!-- <div class="intro-lead-in">WELCOME.</div> -->
-                <div class="intro-heading">개발자가 되고 싶은 J</div>
-                <a href="#about" class="page-scroll btn btn-xl">ABOUT ME</a>
+                <div class="intro-heading">
+					JO YOUNGHYUN
+					<hr/>
+					<h3>Become a Web Developer</h3>
+                </div>
+                <a href="#about" class="page-scroll btn btn-xl">View</a>
             </div>
         </div>
     </header>
@@ -143,7 +147,7 @@
     </section>
 	
 	<!-- Footprints Section -->
-    <section id="aboutSub" style="background-color:#f7fcf9;">
+    <section id="aboutSub" style="background-color:#f9f9f9;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -224,7 +228,7 @@
     </section>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
+    <section id="portfolio" style="background-color:#f2f2f2;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -796,21 +800,34 @@
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
 	
-	<!-- SCM Music Player -->
-	<!-- SCM Music Player http://scmplayer.net -->
-	<script type="text/javascript" src="http://scmplayer.net/script.js"
-	data-config="{'skin':'http://static.tumblr.com/su8juwr/S41mp2h5y/camera.css',
-	'volume':45,'autoplay':true,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':false,
+	<!-- BGM -->
+	<!-- Wikplayer https://www.wikplayer.com -->
+	<!-- <script type="text/javascript" src="https://www.wikplayer.com/code.js"
+	data-config="{'skin':'skins/wikfull/plainBlack/skin.css',
+	'volume':50,'autoplay':true,'shuffle':false,'repeat':1,'showcomment':false,'marqueetexton':true,'placement':'bottom','showplaylist':false,
 	'playlist':[
-	{'title':'Reminiscence','url':'http://dl.bgms.kr/download/byhhV/mp3/Talesweaver-Reminiscence'},
-	{'title':'Somewhere','url':'http://dl.bgms.kr/download/N61eZ/mp3/TRY_ost-Somewhere%28e%29'},
-	{'title':'I Will','url':'http://dl.bgms.kr/download/hxK1p/mp3/I_Will'},
-	{'title':'Mighty Long Fall','url':'http://dl.bgms.kr/download/lkRsA/mp3/one%20ok%20rock%20mighty%20long%20fall'},
-	{'title':'Loop','url':'http://dl.bgms.kr/download/MiRgX/mp3/%5B%E6%97%A5%5DLoop'},
-	{'title':'Third Run','url':'http://dl.bgms.kr/download/3DMVU/mp3/----EPISODE3-----%20Third%20Run'}
-	]}">
+	{'title':'Reminiscence','url':'http%3A%2F%2Fdl.bgms.kr%2Fdownload%2FbyhhV%2Fmp3%2FTalesweaver-Reminiscence'},
+	{'title':'Somewhere','url':'http%3A%2F%2Fdl.bgms.kr%2Fdownload%2FN61eZ%2Fmp3%2FTRY_ost-Somewhere%28e%29'},
+	{'title':'I Will','url':'http%3A%2F%2Fdl.bgms.kr%2Fdownload%2FhxK1p%2Fmp3%2FI_Will'},
+	{'title':'Mighty Long Fall','url':'http%3A%2F%2Fdl.bgms.kr%2Fdownload%2FlkRsA%2Fmp3%2Fone%20ok%20rock%20mighty%20long%20fall'},
+	{'title':'Loop','url':'http%3A%2F%2Fdl.bgms.kr%2Fdownload%2FMiRgX%2Fmp3%2F%5B%E6%97%A5%5DLoop'},
+	{'title':'Third Run','url':'http%3A%2F%2Fdl.bgms.kr%2Fdownload%2F3DMVU%2Fmp3%2F----EPISODE3-----%20Third%20Run'}
+	]}" ></script> -->
+	<!-- Wikplayer code end -->
+	<!-- Wikplayer https://www.wikplayer.com -->
+	<audio id="mp" loop="loop" autoplay="autoplay">
+		<!-- <source src="http://dl.bgms.kr/download/byhhV/mp3/Talesweaver-Reminiscence" type="audio/mpeg"> -->
+		<source src="http://dl.bgms.kr/download/3DMVU/mp3/----EPISODE3-----%20Third%20Run" type="audio/mpeg">
+		이 브라우저는 audio 태그를 지원하지 않습니다.<br/>
+		지원 브라우저: IE 9+, Chrome 4.0+, FF3.5+, Safari 4.0+, Opera 10.5+
+	</audio>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var mid = document.getElementById("mp");
+		mid.volume = 0.3;
+	});
 	</script>
-	<!-- SCM Music Player script end -->
 </body>
 
 </html>
